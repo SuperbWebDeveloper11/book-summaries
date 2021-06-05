@@ -23,11 +23,16 @@ book-summaries is a django project built for readers to make summaries for each 
 
 
 ![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
-![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
-![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
-![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
-![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
-![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-10-15.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-10-31.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-10-54.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-11-08.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-11-29.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-11-41.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-11-49.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-12-25.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-12-45.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-12-57.png)
 
   
 
