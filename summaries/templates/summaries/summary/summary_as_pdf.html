@@ -1,0 +1,42 @@
+{% load summary_filters %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #pdf-document {
+        background-color: #FBFCFC;
+      }
+      .header-image {
+        margin: auto;
+        margin: auto;
+      }
+    </style>
+
+  </head>
+  <body id="pdf-document">
+
+    <div>
+
+      <!-- Display summary.title and summary.author.username -->
+      <h1>{{ summary.title }} By {{ summary.author.username }} </h1>
+
+      <!-- Display summary body -->
+      <p> {{ summary.body|markdown_format }} </p> 
+
+      <!-- add some information about the document downloaded -->
+      <div class='text-center'>
+        <p> ------------------------------------------------------------------------------------------------------ </p>
+        {% if user.is_authenticated %}
+        <p> This summary was downloaded by <b>{{ user.username }}</b>, in {{ date }} </p>
+        {% else %}
+        <p> This summary was downloaded in {{ date }} </p>
+        {% endif %}
+        <p> ------------------------------------------------------------------------------------------------------ </p>
+      </div>
+
+
+    </div>
+
+  </body>
+</html>

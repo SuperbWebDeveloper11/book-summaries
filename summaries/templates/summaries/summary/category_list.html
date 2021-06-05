@@ -1,0 +1,15 @@
+
+<!-- Display all tags -->
+<div class="mt-5">
+{% if category_list %}
+    <p><b>Categories: </b>
+        {% for category in category_list %}
+            <a href="{% url 'summaries:summary_list' category_id=category.id %}" class="btn btn-outline-secondary btn-sm my-2">{{ category.name }}</a>
+        {% endfor %}
+    </p>
+{% endif %}
+</div>
+
+<!-- Some styles to make those links in the middle -->
+<style>
+</style>

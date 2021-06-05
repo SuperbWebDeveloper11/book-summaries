@@ -1,0 +1,42 @@
+{% load summary_filters %}
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="bi bi-book-fill"></i> Book summaries</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="{% url "summaries:summary_list" %}" class="nav-link">Home</a>
+        </li>
+        {% category_list_for_navbar %}
+        <li class="nav-item">
+          <a href="{% url "summaries:summary_add" %}" class="nav-link"><i class="bi bi-plus"></i> add summary</a>
+        </li>
+        {% if not request.user.is_authenticated %}
+        <li class="nav-item">
+          <a href="{% url "login" %}" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url "register" %}" class="nav-link">Register</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a href="{% url "logout" %}" class="nav-link">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url "dashboard" %}" class="nav-link">Hello <b>{{ request.user.username }}</b></a>
+        </li>
+        {% endif %}
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+

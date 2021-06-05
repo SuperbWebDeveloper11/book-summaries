@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load summary_filters %}
+
+{% block content %}
+
+
+<!-- Display summary.title and summary.author.username -->
+<h2>{{ summary.title }} By {{ summary.author.username }} </h2>
+
+<!-- Display summary body -->
+<p> {{ summary.body|markdown_format }} </p> 
+
+<!-- link to download summary -->
+<a href="{% url 'summaries:summary_download' pk=summary.pk %}"  target="_blank" class='btn btn-dark mt-3 mb-3'><i class="bi bi-download"></i> Download this summary</a>
+
+
+<!-- Display 'Edit' and 'Delete' buttons -->
+{% if user.is_authenticated and summary.author == request.user %}
+<p>
+<a href="{% url 'summaries:summary_update' summary.pk %}" class='btn btn-dark mt-3 mb-5'><i class="bi bi-pencil"></i> Edit</a>
+<a href="{% url 'summaries:summary_delete' summary.pk %}" class='btn btn-danger mt-3 mb-5'><i class="bi bi-trash"></i> Delete</a>
+</p>
+<hr />
+{% endif %}
+
+{% endblock %}

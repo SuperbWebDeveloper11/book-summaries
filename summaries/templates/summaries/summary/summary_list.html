@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load summary_filters %}
+
+{% block content %}
+
+<div class="row">
+  <h1 class='text-center'>Read Our Book Summaries</h1>
+
+  <div class="col-md-8">
+
+    {% if user.is_authenticated %}
+    <a href="{% url 'summaries:summary_add' %}" class='btn btn-success mt-3 mb-5'><i class="bi bi-plus-lg"></i> add summary</a>
+    {% endif %}
+
+    <!-- Display list of all summaries -->
+    {% for summary in summary_list %}
+    <div class="card bg-light mb-3" style="max-width: 100%;">
+      <div class="card-header">{{ summary.title }}</div>
+      <div class="card-body">
+        <!-- Link to display summarys for specific user -->
+        <h4 class="card-title">Created By {{ summary.author.username }} </h4>
+        <p class="card-text"> {{ summary.body|markdown_format|truncatewords_html:30 }} </p>
+        <a href="{{ summary.get_absolute_url }}" class='btn btn-success'><i class="bi bi-eye"></i> Detail</a>
+      </div>
+    </div>
+    {% empty %}
+    <p>No summary yet</p>
+    {% endfor %}
+
+
+  </div>
+  <div class="col-md-4">
+    <!-- Inclusion tag that display all tags - 'blog/post/tags_list.html' -->
+    {% tags_list %}
+    {% category_list %}
+  </div>
+</div>
+
+<!-- Display pagination only if page_obj have some value -->
+{% if page_obj %}
+{% include "summaries/summary/pagination.html" with page=page_obj %}
+{% endif %}
+
+{% endblock %}
