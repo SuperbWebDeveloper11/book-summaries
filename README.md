@@ -1,18 +1,16 @@
 
 ### book-summaries    
-book-summaries is a django project built for readers to make summaries for each book they read  
-  
+book-summaries is a django project built for readers to make summaries for each book they read and see other summaries
 
-![screenshot](...........................)
   
-### how book reader will interact with the app:  
+### How users will interact with the app:  
 - anonymous users could display summary list, each summary and download a pdf copy
 - users could login using username and password or create new accounts   
-- perform book crud operations 
+- logged in users could perform book crud operations 
 - Each book instance will have : title, body, category, tags
   
   
-### archive-assistant is built using:  
+### book-summaries is built using:  
 - Django   
 - django_taggit 
 - django-widget-tweaks  
@@ -21,6 +19,15 @@ book-summaries is a django project built for readers to make summaries for each 
 - Markdown
   
 
-[you can find some screenshots here]()
+#### here are some screensshot of the book-summaries project:
+
+
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
+![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Book%20Summaries.png)
+
   
 
