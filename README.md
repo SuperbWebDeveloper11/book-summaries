@@ -67,7 +67,7 @@ book-summaries is a django project built for readers to make summaries for each 
 ![screenshot](https://github.com/pedrasfloki/book-summaries/blob/main/screensshot%20for%20the%20project/Screenshot%20from%202021-06-05%2018-12-57.png)
 
   
-Note:
+**Note:**
   I took a lot of ideas for the book **Django 2 by Example by Antonio Mele**
 
 
